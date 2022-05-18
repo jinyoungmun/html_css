@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice06</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>로그인 정보</legend>
+                <label>아이디 : <input type="text" required autofocus placeholder = "아이디 입력"><br></label>
+                <label>비밀번호 : <input type="text"></label>
+            </fieldset>
+            아이디 저장 : <input type="radio" checked>저장
+            <input type="checkbox"> 저장하지 않음 이메일 : <input type="text
+            ">@
+            <select> <option>선택</option> <option>naver.com</option>
+            <option>hanmail.net</option> <option>직접입력</option> </select>
+            파일첨부 : <input type="file">
+            <input type="search"> <input type="submit" value="검색">
+            <input type="reset" value="다시 입력">
+
+            <p> <label for="e_id"> 이메일 보내기 </label>
+                <input type="email" id="e_id" name="e_name" placeholder="abc@abc.com" required>
+                <br><br>
+                <label for="u_id"> 인터넷 사이트 이동하기 </label>
+                <input type="url" id="u_id" name="u_name" placeholder="http://" required>
+                <br><br>
+                <input type="text" list="choices">
+                <datalist id="choices">
+                    <option value="speaking" label="회화"></option>
+                    <option value="listening" label="리스닝"></option>
+                </datalist> </p>
+            <p><textarea cols="60" rows="5">의견을 남겨 주세요.</textarea>
+        </form>
+        </p>
+        <h1>성별 구분</h1>
+        <input type="radio" name="ra_btn" value="1" checked> 남자 <br>
+        <input type="radio" name="ra_btn" value="2"> 여자 <p>
+            <h1> 취미 활동을 선택하세요.</h1>
+            <input type="checkbox" name="ch_btn" value="1" checked> 등산 <br>
+            <input type="checkbox" name="ch_btn" value="2" checked> 골프 <br>
+            <input type="checkbox" name="ch_btn" value="3" > 마라톤<p>
+                <label for="num_id"> 숫자 입력(스핀 컨트롤) </label> &nbsp;
+                <input type="number" id="r_id" min="0" max="10" step="2" value="2"><br><br>
+                <label for="r_id"> 숫자 입력(슬라이드 컨트롤) </label> &nbsp;
+                <input type="range" id="r_id" min="0" max="100" step="10"><br>
+                <br>
+                <br>
+                <fieldset>
+                    <legend> 날짜와 시간 선택 </legend>
+                    date : <input type="date"><br>
+                    month : <input type="month"><br>
+                    week : <input type="week"><br>
+                    time : <input type="time"><br>
+                    datetime : <input type="datetime"><br>
+                </fieldset>
+                <button type="submit">확인</button>
+    </body>
+</html>
