@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var num = 1;
+            var t = "<table border=1>"
+            for(i=0; i<5; i++){
+                t+="<tr>";
+                for(j=0; j<5; j++){
+                    t+="<td>"+num+"</td>";
+                    num++;
+                }
+                t+="</tr>";
+            }
+            t+="</table>";
+            console.log(t);
+            document.write(t);
+        </script>
+    </head>
+</html>
